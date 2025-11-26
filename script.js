@@ -798,7 +798,7 @@ class ContactForm {
             }
 
             if (response.ok) {
-                this.showMessage('Message sent successfully! We\'ll get back to you soon.', 'success');
+                this.showMessage('Message sent successfully! I\'ll get back to you soon.', 'success');
                 this.resetForm({ keepRecording: true });
             } else {
                 throw new Error(`Server returned status ${response.status}`);
@@ -856,7 +856,7 @@ class ContactForm {
         console.log('Desktop response text:', responseText);
 
         if (response.ok) {
-            this.showMessage('Message sent successfully! We\'ll get back to you soon.', 'success');
+            this.showMessage('Message sent successfully! I\'ll get back to you soon.', 'success');
             this.resetForm({ keepRecording: true });
         } else {
             throw new Error('Failed to send message');
